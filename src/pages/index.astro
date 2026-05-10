@@ -15,15 +15,24 @@ import '../styles/global.css';
     <main class="max-w-4xl mx-auto px-5 py-5">
 
       <!-- Top bar -->
-      <div class="bg-white border border-stone-200 rounded-md px-5 py-3.5 flex items-center justify-between mb-5">
-        <div class="flex items-center gap-3">
-          <img src="/images/avatar.jpg" alt="William Gieng" class="w-9 h-9 rounded-full object-cover" />
-          <div>
-            <p class="font-medium text-sm leading-tight">William Gieng</p>
-            <p class="text-xs text-stone-500 leading-tight">Staff Data Scientist, Qualtrics</p>
+      <div class="bg-white border border-stone-200 rounded-md px-5 py-3.5 mb-5">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <img src="/images/avatar.jpg" alt="William Gieng" class="w-9 h-9 rounded-full object-cover" />
+            <div>
+              <p class="font-medium text-sm leading-tight">William Gieng</p>
+              <p class="text-xs text-stone-500 leading-tight">Staff Data Scientist, Qualtrics</p>
+            </div>
           </div>
+          <nav class="hidden md:flex gap-5 text-sm text-stone-500">
+            <a href="#work">Work</a>
+            <a href="#writing">Writing</a>
+            <a href="#tools">Tools</a>
+            <a href="#notes">Notes</a>
+            <a href="/about">About</a>
+          </nav>
         </div>
-        <nav class="hidden md:flex gap-5 text-sm text-stone-500">
+        <nav class="md:hidden flex gap-4 text-xs text-stone-500 mt-3 pt-3 border-t border-stone-100">
           <a href="#work">Work</a>
           <a href="#writing">Writing</a>
           <a href="#tools">Tools</a>
