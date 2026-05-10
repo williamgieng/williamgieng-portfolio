@@ -1,0 +1,82 @@
+---
+import '../../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Subscriber churn prediction — William Gieng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-stone-50 font-sans text-stone-900 min-h-screen">
+    <main class="max-w-4xl mx-auto px-5 py-5">
+
+      <!-- Top bar -->
+      <div class="bg-white border border-stone-200 rounded-md px-5 py-3.5 flex items-center justify-between mb-7">
+        <a href="/" class="flex items-center gap-3 text-stone-900">
+          <img src="/images/avatar.jpg" alt="William Gieng" class="w-9 h-9 rounded-full object-cover" />
+          <div>
+            <p class="font-medium text-sm leading-tight">William Gieng</p>
+            <p class="text-xs text-stone-500 leading-tight">Staff Data Scientist, Qualtrics</p>
+          </div>
+        </a>
+        <nav class="hidden md:flex gap-5 text-sm text-stone-500">
+          <a href="/#work" class="text-stone-900">Work</a>
+          <a href="/#writing">Writing</a>
+          <a href="/#tools">Tools</a>
+          <a href="/#notes">Notes</a>
+          <a href="/about">About</a>
+        </nav>
+      </div>
+
+      <!-- Back link -->
+      <a href="/#work" class="inline-block text-xs text-stone-500 mb-4">← Back to selected work</a>
+
+      <!-- Case study header -->
+      <article class="bg-white border border-stone-200 rounded-xl p-8 md:p-10 mb-5">
+        <div class="h-1 w-10 rounded-sm mb-5" style="background: #0F6E56"></div>
+        <p class="text-xs text-stone-500 uppercase tracking-wide mb-3">02 — Prediction</p>
+        <h1 class="font-serif text-3xl font-medium leading-tight mb-4 max-w-3xl">
+          Subscriber churn prediction: survival curves and early engagement signals
+        </h1>
+        <p class="text-base text-stone-600 leading-relaxed max-w-3xl">
+          Can first-month behavior separate "binge and leave" users from habit builders? Acquisition channel, billing, and engagement decomposition.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-1.5">
+          <span class="text-xs px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-900">Survival curves</span>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-900">Cohort analysis</span>
+          <span class="text-xs px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-900">Classification</span>
+        </div>
+      </article>
+
+      <!-- Deck -->
+      <section style="background: white; border: 1px solid #e7e5e4; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.25rem;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+          <p style="font-size: 11px; color: #78716c; text-transform: uppercase; letter-spacing: 0.05em; margin: 0;">Full case study deck</p>
+        </div>
+        <div style="display: flex; gap: 12px;">
+          <a href="/decks/churn-prediction.pdf" target="_blank" rel="noopener" style="flex: 1; text-align: center; padding: 12px 20px; background: #1e293b; color: white; border-radius: 6px; font-size: 13px; font-weight: 500;">Open deck in new tab ↗</a>
+          <a href="/decks/churn-prediction.pdf" download style="flex: 1; text-align: center; padding: 12px 20px; background: white; color: #1e293b; border: 1px solid #e7e5e4; border-radius: 6px; font-size: 13px; font-weight: 500;">Download PDF ↓</a>
+        </div>
+      </section>
+
+      <!-- Footer note -->
+      <article class="bg-white border border-stone-200 rounded-xl p-6 md:p-8 mb-7">
+        <p class="text-xs text-stone-500 uppercase tracking-wide mb-2">Note</p>
+        <p class="text-sm text-stone-600 leading-relaxed">
+          All figures and data shown in the deck are synthetic and anonymized to preserve confidentiality. The analytical patterns and methodological framework reflect real work; specific numbers do not.
+        </p>
+      </article>
+
+    </main>
+
+    <style is:global>
+      body { font-family: 'Inter', system-ui, sans-serif; }
+      .font-serif { font-family: 'Source Serif 4', Georgia, serif; }
+    </style>
+  </body>
+</html>

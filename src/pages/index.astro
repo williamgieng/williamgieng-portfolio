@@ -1,17 +1,245 @@
 ---
-
+import '../styles/global.css';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>William Gieng — Staff Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-stone-50 font-sans text-stone-900 min-h-screen">
+    <main class="max-w-4xl mx-auto px-5 py-5">
+
+      <!-- Top bar -->
+      <div class="bg-white border border-stone-200 rounded-md px-5 py-3.5 flex items-center justify-between mb-5">
+        <div class="flex items-center gap-3">
+          <img src="/images/avatar.jpg" alt="William Gieng" class="w-9 h-9 rounded-full object-cover" />
+          <div>
+            <p class="font-medium text-sm leading-tight">William Gieng</p>
+            <p class="text-xs text-stone-500 leading-tight">Staff Data Scientist, Qualtrics</p>
+          </div>
+        </div>
+        <nav class="hidden md:flex gap-5 text-sm text-stone-500">
+          <a href="#work">Work</a>
+          <a href="#writing">Writing</a>
+          <a href="#tools">Tools</a>
+          <a href="#notes">Notes</a>
+          <a href="/about">About</a>
+        </nav>
+      </div>
+
+      <!-- Hero -->
+      <section class="bg-white border border-stone-200 rounded-xl p-8 md:p-10 mb-7">
+        <p class="text-xs text-stone-500 uppercase tracking-wide mb-3">Portfolio</p>
+        <h1 class="font-serif text-3xl font-medium leading-tight mb-3.5 max-w-xl">
+          Decision science for ambiguous business questions.
+        </h1>
+        <p class="text-sm text-stone-600 max-w-xl leading-relaxed">
+          Staff-level data scientist focused on causal inference, experimentation, and the translation of statistical evidence into senior leadership decisions.
+        </p>
+      </section>
+
+      <!-- Selected work -->
+      <div class="mb-3 px-1" id="work">
+        <h2 class="font-serif text-xl font-medium">Selected work</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-7">
+
+        <article class="bg-white border border-stone-200 rounded-xl p-5">
+          <div class="h-1 w-8 rounded-sm mb-3.5" style="background: #185FA5"></div>
+          <p class="text-xs text-stone-500 uppercase tracking-wide mb-1.5">01 — Retention</p>
+          <h3 class="font-serif text-base font-medium leading-snug mb-2.5">
+            Acquisition quality vs. durable value: a multi-method retention diagnosis
+          </h3>
+          <p class="text-sm text-stone-600 mb-3.5 leading-relaxed">
+            When a competitor disruption drove a 280K subscriber spike, was it real growth or borrowed users? Three independent lenses on the same question.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-3.5">
+            <span class="text-xs px-2 py-0.5 rounded-md bg-blue-50 text-blue-900">Survival analysis</span>
+            <span class="text-xs px-2 py-0.5 rounded-md bg-blue-50 text-blue-900">Segmentation</span>
+            <span class="text-xs px-2 py-0.5 rounded-md bg-blue-50 text-blue-900">LLM VOC</span>
+          </div>
+          <p class="text-xs text-stone-500 mb-1">Decision impact</p>
+          <p class="text-sm mb-3.5 leading-relaxed">
+            Reframed leadership conversation from acquisition volume to activation quality and retained LTV.
+          </p>
+          <div class="flex gap-3.5 pt-2.5 border-t border-stone-200 text-xs text-blue-700">
+            <a href="/work/retention-diagnosis">→ Read case study</a>
+          </div>
+        </article>
+
+        <article class="bg-white border border-stone-200 rounded-xl p-5">
+          <div class="h-1 w-8 rounded-sm mb-3.5" style="background: #0F6E56"></div>
+          <p class="text-xs text-stone-500 uppercase tracking-wide mb-1.5">02 — Prediction</p>
+          <h3 class="font-serif text-base font-medium leading-snug mb-2.5">
+            Subscriber churn prediction: survival curves and early engagement signals
+          </h3>
+          <p class="text-sm text-stone-600 mb-3.5 leading-relaxed">
+            Can first-month behavior separate "binge and leave" users from habit builders? Acquisition channel, billing, and engagement decomposition.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-3.5">
+            <span class="text-xs px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-900">Survival curves</span>
+            <span class="text-xs px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-900">Cohort analysis</span>
+            <span class="text-xs px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-900">Classification</span>
+          </div>
+          <p class="text-xs text-stone-500 mb-1">Decision impact</p>
+          <p class="text-sm mb-3.5 leading-relaxed">
+            Surfaced channel-level churn risk and "binge and leave" patterns informing onboarding and acquisition spend.
+          </p>
+          <div class="flex gap-3.5 pt-2.5 border-t border-stone-200 text-xs text-blue-700">
+            <a href="/work/churn-prediction">→ Read case study</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Published writing -->
+      <div class="mb-3 px-1" id="writing">
+        <h2 class="font-serif text-xl font-medium">Published writing</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-7">
+
+        <article class="bg-white border border-stone-200 rounded-xl p-5">
+          <div class="flex items-center gap-2 mb-2.5">
+            <span class="text-xs px-2 py-0.5 rounded-md bg-stone-100 text-stone-600">Insight Media Group</span>
+            <span class="text-xs text-stone-400">Article</span>
+          </div>
+          <h3 class="font-serif text-[15px] font-medium leading-snug mb-2">
+            When customers churn at renewal: was it the price or the project?
+          </h3>
+          <p class="text-sm text-stone-600 mb-3 leading-relaxed">
+            Separating overlapping churn drivers when promo expiry and use-case completion arrive together.
+          </p>
+          <div class="pt-2.5 border-t border-stone-200 text-xs text-blue-700">
+            <a href="https://contributor.insightmediagroup.io/when-customers-churn-at-renewal-was-it-the-price-or-the-project/" target="_blank" rel="noopener">Read article ↗</a>
+          </div>
+        </article>
+
+        <article class="bg-white border border-stone-200 rounded-xl p-5">
+          <div class="flex items-center gap-2 mb-2.5">
+            <span class="text-xs px-2 py-0.5 rounded-md bg-stone-100 text-stone-600">Insight Media Group</span>
+            <span class="text-xs text-stone-400">Article</span>
+          </div>
+          <h3 class="font-serif text-[15px] font-medium leading-snug mb-2">
+            LLM summarizers skip the identification step
+          </h3>
+          <p class="text-sm text-stone-600 mb-3 leading-relaxed">
+            Connecting LLM summarization failures to causal identification discipline.
+          </p>
+          <div class="pt-2.5 border-t border-stone-200 text-xs text-blue-700">
+            <a href="https://contributor.insightmediagroup.io/llm-summarizers-skip-the-identification-step/" target="_blank" rel="noopener">Read article ↗</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Tools -->
+      <div class="mb-3 px-1" id="tools">
+        <h2 class="font-serif text-xl font-medium">Tools</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-7">
+
+        <article class="bg-white border border-stone-200 rounded-xl p-5">
+          <div class="flex items-center gap-2 mb-2.5">
+            <span class="text-stone-500 text-sm">⌘</span>
+            <h3 class="font-sans text-sm font-medium">quasi-experimental-pricing</h3>
+          </div>
+          <p class="text-sm text-stone-600 mb-3 leading-relaxed">
+            DiD, synthetic control, RDD, and ITS on a synthetic subscription pricing dataset, with LTV translation and breakeven price calculation.
+          </p>
+          <div class="flex gap-1.5 flex-wrap mb-3">
+            <span class="text-xs px-2 py-0.5 rounded-md bg-stone-100 text-stone-600">Python</span>
+            <span class="text-xs px-2 py-0.5 rounded-md bg-stone-100 text-stone-600">Causal inference</span>
+            <span class="text-xs px-2 py-0.5 rounded-md bg-stone-100 text-stone-600">DiD</span>
+          </div>
+          <div class="pt-2.5 border-t border-stone-200 text-xs text-blue-700">
+            <a href="https://github.com/williamgieng/quasi-experimental-pricing-example" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="bg-white border border-stone-200 rounded-xl p-5">
+          <div class="flex items-center gap-2 mb-2.5">
+            <span class="text-stone-500 text-sm">⌘</span>
+            <h3 class="font-sans text-sm font-medium">transcript-analysis-pipeline</h3>
+          </div>
+          <p class="text-sm text-stone-600 mb-3 leading-relaxed">
+            Three-stage LLM pipeline (extract, synthesize, audit) for decision-grade meeting analysis with explicit grounding and bounded fabrication controls.
+          </p>
+          <div class="flex gap-1.5 flex-wrap mb-3">
+            <span class="text-xs px-2 py-0.5 rounded-md bg-stone-100 text-stone-600">Python</span>
+            <span class="text-xs px-2 py-0.5 rounded-md bg-stone-100 text-stone-600">LLM</span>
+            <span class="text-xs px-2 py-0.5 rounded-md bg-stone-100 text-stone-600">Evaluation</span>
+          </div>
+          <div class="pt-2.5 border-t border-stone-200 text-xs text-blue-700">
+            <a href="https://github.com/williamgieng/transcript-analysis-pipeline" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="bg-white border border-stone-200 rounded-xl p-5">
+          <div class="flex items-center gap-2 mb-2.5">
+            <span class="text-stone-500 text-sm">⌘</span>
+            <h3 class="font-sans text-sm font-medium">llm-churn-reason-mining</h3>
+          </div>
+          <p class="text-sm text-stone-600 mb-3 leading-relaxed">
+            Pipeline that extracts and categorizes churn reasons from unstructured text using weak supervision, transformer fine-tuning, and prompt-engineered LLM summaries.
+          </p>
+          <div class="flex gap-1.5 flex-wrap mb-3">
+            <span class="text-xs px-2 py-0.5 rounded-md bg-stone-100 text-stone-600">Python</span>
+            <span class="text-xs px-2 py-0.5 rounded-md bg-stone-100 text-stone-600">Transformers</span>
+            <span class="text-xs px-2 py-0.5 rounded-md bg-stone-100 text-stone-600">LLM</span>
+          </div>
+          <div class="pt-2.5 border-t border-stone-200 text-xs text-blue-700">
+            <a href="https://github.com/williamgieng/llm-churn-reason-mining" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Decision Science Notes -->
+      <div class="mb-3 px-1" id="notes">
+        <h2 class="font-serif text-xl font-medium">Decision science notes</h2>
+        <p class="text-sm text-stone-500 mt-1">A LinkedIn series on the framing decisions that determine whether analysis is causal.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
+
+        <article class="bg-white border border-stone-200 rounded-md p-4">
+          <p class="text-xs text-stone-500 uppercase tracking-wide mb-1.5">Series · 01</p>
+          <h3 class="font-serif text-sm font-medium leading-snug mb-2">Description, prediction, and causation answer different questions</h3>
+          <p class="text-xs text-stone-600 leading-relaxed mb-3">Teams confuse the three and end up making confident decisions on the wrong analytical foundation.</p>
+          <div class="pt-2 border-t border-stone-200 text-xs text-blue-700">
+            <a href="https://www.linkedin.com/posts/williamgieng_causalinference-datascience-decisionscience-activity-7449826323725991936-Cvo_" target="_blank" rel="noopener">Read on LinkedIn ↗</a>
+          </div>
+        </article>
+
+        <article class="bg-white border border-stone-200 rounded-md p-4">
+          <p class="text-xs text-stone-500 uppercase tracking-wide mb-1.5">Series · 02</p>
+          <h3 class="font-serif text-sm font-medium leading-snug mb-2">Strong teams reason about the counterfactual, not just the outcome</h3>
+          <p class="text-xs text-stone-600 leading-relaxed mb-3">Leadership in data work is making counterfactual assumptions explicit, especially when you can't run an experiment.</p>
+          <div class="pt-2 border-t border-stone-200 text-xs text-blue-700">
+            <a href="https://www.linkedin.com/posts/williamgieng_causalinference-datascience-experimentation-activity-7452393261475794944-56JD" target="_blank" rel="noopener">Read on LinkedIn ↗</a>
+          </div>
+        </article>
+
+        <article class="bg-white border border-stone-200 rounded-md p-4">
+          <p class="text-xs text-stone-500 uppercase tracking-wide mb-1.5">Series · 03</p>
+          <h3 class="font-serif text-sm font-medium leading-snug mb-2">Not every correlation is a lever</h3>
+          <p class="text-xs text-stone-600 leading-relaxed mb-3">Teams scale the wrong strategy when they treat correlations as causal mechanisms. Signal, symptom, and lever are different.</p>
+          <div class="pt-2 border-t border-stone-200 text-xs text-blue-700">
+            <a href="https://www.linkedin.com/posts/williamgieng_causalinference-datascience-analytics-activity-7454567549125648384-b0Wx" target="_blank" rel="noopener">Read on LinkedIn ↗</a>
+          </div>
+        </article>
+
+      </div>
+
+    </main>
+  </body>
 </html>
+
+<style is:global>
+  body { font-family: 'Inter', system-ui, sans-serif; }
+  .font-serif { font-family: 'Source Serif 4', Georgia, serif; }
+</style>

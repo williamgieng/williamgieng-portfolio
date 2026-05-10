@@ -1,0 +1,86 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>About — William Gieng</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Source+Serif+4:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-stone-50 font-sans text-stone-900 min-h-screen">
+    <main class="max-w-4xl mx-auto px-5 py-5">
+
+      <!-- Top bar -->
+      <div class="bg-white border border-stone-200 rounded-md px-5 py-3.5 flex items-center justify-between mb-7">
+        <a href="/" class="flex items-center gap-3 text-stone-900">
+          <img src="/images/avatar.jpg" alt="William Gieng" class="w-9 h-9 rounded-full object-cover" />
+          <div>
+            <p class="font-medium text-sm leading-tight">William Gieng</p>
+            <p class="text-xs text-stone-500 leading-tight">Staff Data Scientist, Qualtrics</p>
+          </div>
+        </a>
+        <nav class="hidden md:flex gap-5 text-sm text-stone-500">
+          <a href="/#work">Work</a>
+          <a href="/#writing">Writing</a>
+          <a href="/#tools">Tools</a>
+          <a href="/#notes">Notes</a>
+          <a href="/about" class="text-stone-900">About</a>
+        </nav>
+      </div>
+
+      <!-- About content -->
+      <article class="bg-white border border-stone-200 rounded-xl p-8 md:p-10">
+        <div class="flex items-start gap-6 mb-6">
+          <img src="/images/headshot.jpg" alt="William Gieng" class="w-24 h-24 md:w-32 md:h-32 rounded-xl object-cover flex-shrink-0" />
+          <div>
+            <p class="text-xs text-stone-500 uppercase tracking-wide mb-2">About</p>
+            <h1 class="font-serif text-3xl font-medium leading-tight">William Gieng</h1>
+          </div>
+        </div>
+
+        <div class="text-stone-700 leading-relaxed max-w-2xl">
+          <p class="mb-5">
+            I'm a Seattle-based Staff Data Scientist at Qualtrics, focused on causal inference, experimentation, and the translation of statistical evidence into senior leadership decisions.
+          </p>
+          <p class="mb-5">
+            Before Qualtrics, I led data science work at DIRECTV in a principal-level scope, with prior roles at Microsoft, T-Mobile, Puget Sound Energy, and First Choice Health.
+          </p>
+          <p class="mb-5">
+            I hold an M.S. in Data Science and Business Analytics from Seattle University and a B.A. in Mathematics from the University of Washington.
+          </p>
+          <p>
+            I write at Towards Data Science on causal inference, experimentation, and decision science for ambiguous business questions.
+          </p>
+        </div>
+
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #e7e5e4;">
+          <p class="text-xs text-stone-500 uppercase tracking-wide mb-3">Get in touch</p>
+          <div class="flex gap-5 text-sm">
+            <a href="https://www.linkedin.com/in/williamgieng" target="_blank" rel="noopener" class="text-blue-700">LinkedIn ↗</a>
+            <a href="#" id="email-link" class="text-blue-700">Email ↗</a>
+            <a href="https://github.com/williamgieng" target="_blank" rel="noopener" class="text-blue-700">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </main>
+
+    <script>
+      const user = 'william.gieng';
+      const domain = 'gmail.com';
+      const link = document.getElementById('email-link');
+      if (link) {
+        link.setAttribute('href', `mailto:${user}@${domain}`);
+      }
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  body { font-family: 'Inter', system-ui, sans-serif; }
+  .font-serif { font-family: 'Source Serif 4', Georgia, serif; }
+</style>
